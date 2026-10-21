@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.9"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <div id="contain">
+            <div id="firsthalf1"> 
+                <img src="images/room.png" id="room"/>
+                <img src="images/calendar.png" id="calendar"/>
+                <img src="images/calendarRem.png" id="calrem" class="noplay" onmouseover="onHover()" onmouseout="offHover()"/>
+                <img src="images/bookcaseHaveOff.png" id="bookcase" onmouseover="haveHover()" onmouseout="haveOff()"/>
+                <img src="images/roomtrans2.png" id="roomtrans" class="rellax" data-rellax-speed="8" data-rellax-zindex="2"/>
+                <div id="diaryread">
+                    
+                </div>
+            </div>
+            <div id="firsthalf2">
+                <img src="images/citysky.png" id="citysky"/>
+                <img src="images/citytrans.png" id="citytrans" class="rellax" data-rellax-speed="8" data-rellax-zindex="2"/>
+                <img src="images/cloudsfar.png" id="cloudsfar" class="rellax" data-rellax-speed="-1" data-rellax-zindex="3"/>
+                <img src="images/cloudsnear.png" id="cloudsnear" class="rellax" data-rellax-speed="6" data-rellax-zindex="5"/>
+                <img src="images/airduct.png" id="airduct" class="rellax" data-rellax-speed="3" data-rellax-zindex="10"/>
+                <img src="images/frontbuilds2.png" id="frontbuilds" class="rellax" data-rellax-speed="6" data-rellax-zindex="20"/>
+            </div>
+            <div id="aboutauthor">
+                <img src="images/aboutAuthorSky.png" id="aboutsky"/>
+                <img src="images/cloudsnear.png" id="cloudsnear2" class="rellax" data-rellax-speed="7" data-rellax-zindex="5"/>
+                <img src="images/aboutAuthor.png" id="about"/>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+        <script>
+            var rellax = new Rellax(".rellax", {
+                horizontal: true,
+                vertical: false
+            });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

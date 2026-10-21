@@ -1,0 +1,114 @@
+html{
+    /* background-color: #21e2de; */
+    background-color: #03d5ff;
+}
+
+body{
+    overflow-y: hidden;
+    padding: 0;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    height: 800px;
+}
+
+#roomtrans{
+    margin-left: 300%;
+}
+
+#bookcase{
+    margin-left: 150%;
+}
+
+#calendar{
+    margin-left: 47%;
+}
+#calrem{
+    margin-left: 46%;
+    margin-top: 1.7%;
+}
+
+#bookcase:hover, #calrem:hover{
+    cursor: pointer;
+}
+
+#frontbuilds{
+    margin-left: 115%;
+}
+
+#firsthalf2{
+    margin-left: 340%;
+}
+
+#aboutauthor{
+    margin-left: 490%;
+}
+
+#cloudsnear2{
+    margin-top: 10%;
+}
+
+#citysky, #room, #aboutsky{
+    z-index: 1;
+}
+
+#cloudsfar, #bookcase, #calendar{
+    z-index: 2;
+}
+#cloudsnear, #cloudsnear2, #calrem{
+    z-index: 5;
+}
+
+#airduct{
+    z-index: 10;
+}
+
+#citytrans, #roomtrans{
+    z-index: 11;
+}
+
+#about{
+    z-index: 19;
+}
+
+#frontbuilds{
+    z-index: 20;
+}
+
+.play{
+    -moz-animation: removeCalendar 2.5s linear 0s 1 forwards;
+    animation: removeCalendar 2s linear 0s 1 forwards;
+}
+
+#frontbuilds:hover{
+    cursor: pointer;
+}
+
+@keyframes removeCalendar{
+    0%{
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    1%{
+        -moz-transform: translate(0, 100px);
+        transform: translate(0, 100px);
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    50%{
+        -moz-transform: translate(30px, 250px);
+        transform: translate(30px, 250px);
+    }
+    75%{
+        -moz-transform: translate(0px, 500);
+        transform: translate(0px, 500px)
+    }
+    100%{
+        -moz-transform: translate(30px, 700px);
+        transform: translate(30px, 700px);
+        visibility: hidden;
+        cursor: default;
+    }
+}
